@@ -1,0 +1,15 @@
+app:
+  name: demo2-photo-generator-app
+  namespace: demo2
+  cluster: .apps.keynote.w6gk.p1.openshiftapps.com
+
+git:
+  branch: main
+  repo: https://github.com/keynote-demo/demo2-photo-generator
+  org: keynote-demo
+  name: demo2-photo-generator
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000
+  name: demo2/photo-generator-app
+  tag: latest
